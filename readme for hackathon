@@ -1,0 +1,88 @@
+# SignSense 🤟
+### Real-Time Sign Language Recognition & Translation
+
+**Breaking communication barriers through computer vision and artificial intelligence.**
+
+SignSense is an AI-powered sign language recognition system designed to make communication more accessible by translating hand gestures into readable text in real time.
+
+Using computer vision and machine learning, SignSense detects hand movements through a webcam, recognizes sign language gestures, and converts them into text, helping bridge the communication gap between sign language users and non-signers.
+
+## 🚀 Key Features
+
+- **Real-Time Recognition:** Recognizes hand gestures through a webcam.
+- **ASL Alphabet Recognition:** Recognizes 24 static American Sign Language (ASL) letters (A–Y, excluding J).
+- **Machine Learning:** Uses a K-Nearest Neighbors (KNN) classifier for gesture classification.
+- **Gesture-Based Word Formation:** Combines recognized letters to form words.
+- **Dynamic Gesture Recognition:** Includes a Dynamic Time Warping (DTW)-based approach for recognizing motion-based gestures.
+- **Conversation Mode:** Supports interactive gesture-based communication.
+
+## 🧠 How It Works
+
+SignSense combines computer vision and machine learning in a simple recognition pipeline:
+
+1. **Video Input:** A webcam captures the user's hand gestures.
+2. **Hand Detection:** MediaPipe detects and tracks hand landmarks.
+3. **Image Processing:** OpenCV processes the webcam frames.
+4. **Feature Extraction:** Hand landmark information is used as input for recognition.
+5. **Gesture Classification:** A trained KNN model predicts the corresponding sign.
+6. **Text Generation:** Recognized gestures are converted into readable text.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| OpenCV | Webcam access and image processing |
+| MediaPipe | Hand landmark detection |
+| NumPy | Numerical operations |
+| KNN | Static gesture classification |
+| DTW | Dynamic gesture recognition |
+
+## 🎯 Project Goal
+
+The goal of SignSense is to explore how artificial intelligence and computer vision can help make everyday communication more accessible.
+
+By translating visual hand gestures into text, SignSense demonstrates how accessible technology can support more inclusive communication.
+
+## ⚙️ Installation
+
+**1. Clone the repository**
+
+```bash
+git clone YOUR_REPOSITORY_URL
+cd SignSense
+```
+
+**2. Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**3. Run the application**
+
+```bash
+python main.py
+```
+
+*Note: Replace the command above if your project's actual entry-point filename is different.*
+
+## 📌 Current Capabilities
+
+- Static ASL alphabet recognition.
+- Real-time webcam-based hand tracking.
+- Letter-to-word formation.
+- Dynamic gesture recognition framework.
+- Interactive conversation mode.
+
+## 🌍 Vision
+
+SignSense aims to contribute to a world where communication is more accessible, inclusive, and independent of language barriers.
+
+**Technology should connect people, not separate them.**
+
+---
+
+**Project:** SignSense  
+**Category:** Artificial Intelligence / Computer Vision / Accessibility  
+**Built with:** Python, OpenCV, MediaPipe and Machine Learning
